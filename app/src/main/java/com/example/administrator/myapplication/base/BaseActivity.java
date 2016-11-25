@@ -23,6 +23,8 @@ import butterknife.Unbinder;
 public abstract class BaseActivity<P extends BasePresenter, M extends BaseModel> extends AppCompatActivity {
 
 
+    public  String TAG=BaseActivity.class.getSimpleName();
+
     public P mPresenter;
     public Context mContext;
     private Unbinder unbinder;
@@ -114,7 +116,7 @@ public abstract class BaseActivity<P extends BasePresenter, M extends BaseModel>
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            //// TODO: 2016/11/25  填写 你需要在底栈的页面 
+            //// TODO: 2016/11/25  填写 你需要在底栈的页面
             return (AppManager.getInstance().processBackKey(MainActivity.class) ?
                     true : super.onKeyDown(keyCode, event));
 
