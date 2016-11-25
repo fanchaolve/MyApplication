@@ -1,4 +1,4 @@
-package com.example.administrator.myapplication.baseutils.utils;
+package com.example.administrator.myapplication.base.utils;
 
 /**
  * Created by Administrator on 2016/11/24.
