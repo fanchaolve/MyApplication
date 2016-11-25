@@ -38,6 +38,7 @@ public class BilibiliActivity extends MenuBaseActivity {
         private Post post01 = new Post(R.drawable.img_01, PREFIX + "post01");
         private Post post10 = new Post(R.drawable.img_10, PREFIX + "post10");
         private Post post11 = new Post(R.drawable.img_11, PREFIX + "post11");
+        private Post post12 = new Post(R.drawable.img_11, PREFIX + "post12");
 
         Category category0 = new Category("title0");
         Post[] postArray = {post00, post01, post10, post11};
