@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.base.BaseActivity;
+import com.example.administrator.myapplication.base.BaseView;
 import com.example.administrator.myapplication.bean.MessageDetail;
 import com.example.administrator.myapplication.bean.MessageEvent;
 import com.example.administrator.myapplication.bean.Messagelist;
@@ -29,14 +30,12 @@ public class MainActivity extends BaseActivity {
 
 
 
-//    @BindViews(R.id.tv_message)
-//    TextView tv_message;
-//
-//    @BindViews(R.id.bt_startact)
-//    Button bt_startact;
-
+    @BindView(R.id.tv_message)
     TextView tv_message;
+
+    @BindView(R.id.bt_startact)
     Button bt_startact;
+
 
     private StringBuilder  str_Mess=new StringBuilder();
 
@@ -47,8 +46,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        tv_message= (TextView) findViewById(R.id.tv_message);
-        bt_startact= (Button) findViewById(R.id.bt_startact);
         bt_startact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,10 +59,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         EventBus.getDefault().register(this);
         super.onCreate(savedInstanceState);
-
-
-
-
 
 
     }

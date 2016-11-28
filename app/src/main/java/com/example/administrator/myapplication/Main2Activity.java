@@ -7,6 +7,7 @@ import com.example.administrator.myapplication.base.BaseActivity;
 import com.example.administrator.myapplication.bean.MessageDetail;
 import com.example.administrator.myapplication.bean.Messagelist;
 
+import butterknife.BindView;
 import de.greenrobot.event.EventBus;
 
 public class Main2Activity extends BaseActivity {
@@ -15,8 +16,9 @@ public class Main2Activity extends BaseActivity {
     //////////////////////////////
     //.,sdfhjaisufhsaf
     //!!!!!!!!!!!!!!!!!!!!
-//    @BindView(R.id.bt_send)
+    @BindView(R.id.bt_send)
     Button bt_send;
+    @BindView(R.id.bt_send2)
     Button bt_send2;
 
     @Override
@@ -27,8 +29,6 @@ public class Main2Activity extends BaseActivity {
     @Override
     public void initView() {
 
-        bt_send= (Button) findViewById(R.id.bt_send);
-        bt_send2= (Button) findViewById(R.id.bt_send2);
 
         bt_send.setOnClickListener(new View.OnClickListener() {
             @Override
