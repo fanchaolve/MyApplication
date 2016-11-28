@@ -12,6 +12,8 @@ import de.greenrobot.event.EventBus;
 public class Main2Activity extends BaseActivity {
 
 
+    //////////////////////////////
+    //.,sdfhjaisufhsaf
     //!!!!!!!!!!!!!!!!!!!!
 //    @BindView(R.id.bt_send)
     Button bt_send;
