@@ -1,21 +1,18 @@
 package com.example.administrator.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.administrator.myapplication.base.BaseActivity;
 import com.example.administrator.myapplication.bean.MessageDetail;
 import com.example.administrator.myapplication.bean.Messagelist;
 
-import butterknife.BindView;
 import de.greenrobot.event.EventBus;
 
 public class Main2Activity extends BaseActivity {
 
 
+    //!!!!!!!!!!!!!!!!!!!!
 //    @BindView(R.id.bt_send)
     Button bt_send;
     Button bt_send2;
