@@ -13,6 +13,10 @@ public class App extends Application{
 
     private static App INSTANCE=null;
 
+
+
+    //-------
+
     public static App getInstance() {
         return INSTANCE;
     }
